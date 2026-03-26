@@ -4,14 +4,13 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Gestor_de_grastos/',
-  server: {
+    server: {
     hmr: {
       overlay: false
     }
   },
   build: {
-    outDir: 'docs',
+    outDir: 'dist',
     assetsDir: 'assets'
   }
 })
